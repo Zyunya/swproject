@@ -1,0 +1,8 @@
+@import '~@angular/material/theming';
+@include mat-core();
+//$mat-indigo
+$sw-primary: mat-palette($mat-indigo);
+$sw-accent:  mat-palette($mat-lime,A700);
+$sw-warn:    mat-palette($mat-red);
+$sw-theme:   mat-light-theme($sw-primary, $sw-accent, $sw-warn);
+@include angular-material-theme($sw-theme);

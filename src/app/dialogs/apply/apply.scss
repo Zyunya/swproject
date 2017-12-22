@@ -1,0 +1,60 @@
+@import "../../../sw.scss";
+
+::ng-deep apply-dialog{
+
+	color:#656565 !important;
+	.actions{
+		display:flex;
+		justify-content:space-around;
+		padding:10px;
+	}
+	::ng-deep{
+		mat-form-field{
+			border:0px solid red !important;
+			width:100%;
+		}
+
+		/* To display a border for the input */
+		.mat-input-flex.mat-form-field-flex{
+
+		}
+ 		/* To remove the default underline */
+		.mat-input-underline.mat-form-field-underline {
+
+ 		}
+		/* To remove the underline ripple */
+		.mat-input-ripple.mat-form-field-ripple{
+			border: 1px solid $colorsw;
+		 }
+		 .mat-focused label{
+			color: $colorsw !important;
+		 }
+
+		 mat-form-field.mat-form-field {
+			//color:$colorsw;
+		  }
+		}
+		button{
+			min-width:150px;
+		}
+
+@media screen and (max-width: 800px) {
+
+			button{
+				min-width:120px !important;
+				margin:2% !important;
+			}
+
+}
+
+}
+
+
+
+
+
+
+.mat-dialog-container {
+    padding: 0px !important;
+}
+

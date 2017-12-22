@@ -1,0 +1,118 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "~bootstrap/scss/bootstrap";
+@import "~font-awesome/css/font-awesome.css";
+@import "./theme.scss";
+@import "./assets/styles/animations.scss";
+@import "./sw.scss";
+@font-face { font-family: rancho; src: url("./assets/fonts/rancho.ttf"); /* Путь к файлу со шрифтом */ }
+
+$ml1 : 10px;
+$ml2 : 20px;
+$ml3 : 30px;
+$fs1:14px;
+$transition1 : 1.3s;
+
+app-root{
+	overflow-x:hidden !important;
+
+}
+
+
+body,html{
+	position: relative;
+	left:0px;
+	right:0px;
+	min-height:100% !important;
+	max-width:100% !important;
+	overflow-x:hidden !important;
+
+}
+
+.container-fluid{
+overflow-x:hidden !important;
+	h1{
+		color:#656565;
+	}
+}
+
+::-webkit-scrollbar { display: none; }
+
+button:focus{outline:0 !important}
+md-icon:hover{cursor:pointer !important}
+.mat-accent{ color:white !important;}
+.example-fill-remaining-space {
+  // This fills the remaining space, by using flexbox.
+  // Every toolbar row uses a flexbox row layout.
+  flex:auto;
+}
+md-icon.size-16 {
+ font-size:43px;
+  width: 43px;
+  height:43px;
+
+}
+.toolbar_text{
+	margin-left : $ml1;
+	button{
+		margin-left : $ml1;
+		text-transform: uppercase;
+		font-size:13px;
+	}
+}
+
+#black-side{
+	background: rgba(0,0,0,0.9)  !important;
+	color:white !important;
+}
+
+#ceoimg{
+	border:0px solid #656565;
+	height:180px;
+	width:180px;
+	margin:auto;
+	background-image:url('assets/img/CEO.jpg');
+	background-size:100%;
+	border-radius:10px;
+	margin-top:50px;
+	filter:  grayscale(50%);
+}
+
+#footer{
+	display:flex;
+	justify-content: space-around;
+	background: rgba(0,0,0,0.9)  !important;
+	width:100%;
+	color:$colorsw;
+	font-size:15px;
+	font-weight: 400;
+	text-align:center;
+	padding:17px;
+	font-family: arial;
+}
+
+.example-header-image {
+	background-image: url('./assets/img/CEO.jpg');
+	background-size: cover;
+}
+
+.rancho{font-family: rancho;}
+.pdngno{ padding:0px !important;}
+
+.trns{transition:$transition1;}
+
+
+
+
+/* Making Modals size 100% on mobile devices  */
+@media screen and (max-width: 800px) {
+
+	 .cdk-overlay-pane {
+		height:100% !important;
+		flex: 1 1 0;
+		max-width:100% !important;
+	}
+
+}
+
+

@@ -1,0 +1,51 @@
+<div class=" text-center" id="apply-dialog">
+	<h1 mat-dialog-title class="primary-color display-3">{{data.name}}</h1>
+	<mat-dialog-content class="accent-color">
+
+			<div class="alert alert-success" role="alert" [innerHtml]="'info1' | translate">
+				</div>
+
+		<form [formGroup]="Form">
+
+			<mat-form-field class="example-full-width">
+				<input formControlName="email" [(ngModel)]="apply.email" required matInput placeholder="Email">
+				<mat-error *ngIf="apply.email &&  Form.controls.email?.errors?.email">
+					{{'invalid_email' | translate}}
+				</mat-error>
+				<mat-error *ngIf="Form.get('email').hasError('required')"  [innerHtml]="'required' | translate">
+				</mat-error>
+			</mat-form-field>
+
+
+			<mat-form-field class="example-full-width">
+				<span matPrefix>+380 &nbsp;</span>
+				<input type="tel" formControlName="phone" matInput [(ngModel)]="apply.phone" placeholder="	{{'telephone' | translate}} ({{'not_required' | translate}})">
+				<mat-icon matSuffix>mode_edit</mat-icon>
+			</mat-form-field>
+
+			<mat-form-field>
+				<textarea matTextareaAutosize matAutosizeMinRows="2" matAutosizeMaxRows="5" formControlName="desc" [(ngModel)]="apply.desc"
+				 required matInput placeholder="{{'apply_desc' | translate}}"></textarea>
+				<mat-error *ngIf="Form.controls.desc?.errors" [innerHtml]="'required' | translate">
+				</mat-error>
+
+			</mat-form-field>
+
+			<div *ngIf = "outpErr" class="alert alert-danger" role="alert">
+					<strong>Message: </strong>{{outpErr}}
+				</div>
+
+				<div *ngIf = "outpSuc" class="alert alert-success" role="alert">
+						<strong>Message: </strong>{{outpSuc}}
+					</div>
+
+			<div class='actions '>
+				<button (click)="Apply();" mat-raised-button color="accent">	{{'send' | translate}}</button>
+				<button mat-raised-button color="primary" mat-dialog-close>	{{'close' | translate}}</button>
+			</div>
+
+		</form>
+
+	</mat-dialog-content>
+
+</div>

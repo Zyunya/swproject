@@ -1,0 +1,24 @@
+::ng-deep app-contacts{
+
+	height:100vh !important;
+
+	mat-spinner{
+		margin:auto;
+		position: absolute;
+		top: 40%;
+		transform: translateY(-50%);
+		z-index:999;
+	}
+
+		#googlemaps{
+		height:100vh	 !important;
+		z-index:1;
+	}
+
+		#back{
+		position: absolute;
+		bottom:27px;
+		left:15px;
+		z-index:999;
+	}
+}

@@ -1,0 +1,27 @@
+    div(class=classes1)
+        .col-lg-6.text-center
+            h1.display-3 {{'about' | translate }}
+            p.text-justify  {{'sweetvel_main_desc' | translate }}
+        .col-lg-5.offset-lg-1.text-center
+            h1.display-3 {{'apply' | translate }}
+
+            form.example-form
+                mat-form-field.example-full-width.w-100
+                    input(placeholder="Your Name", value="Zyunya", matInput)
+                mat-form-field.example-full-width.w-100 
+                    span(matPrefix) +380 &nbsp;
+                    input(type='tel', placeholder="Telephone", matInput)
+                    mat-icon(matSuffix) mode_edit 
+                mat-form-field.example-full-width.w-100   
+                    input(type='tel',#message, placeholder="Message",maxlength="256", matInput)
+                    mat-hint(align="start")
+                        strong Don't disclose personal info
+                    mat-hint(align="end") {{message.value.length}} / 256
+                br
+                br  
+                button(mat-raised-button, color="accent", class='w-100') Apply 
+
+  mat-grid-list(cols="3",rowHeight="2:1")
+            mat-grid-tile: img.mh-10.img-fluid(src='../assets/img/nodejs.png')
+            mat-grid-tile: img.img-fluid(src='../assets/img/mongodb.png')
+            mat-grid-tile: img.img-fluid(src='../assets/img/angular.png')

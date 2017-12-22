@@ -1,0 +1,14 @@
+{
+  "short_name": "Sw",
+  "name": "Sweetvel",
+  "icons": [
+	{
+	  "src": "./assets/img/favicon-apple-180px.png",
+	  "sizes": "180x180",
+	  "type": "image/png"
+	}
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "landscape"
+}

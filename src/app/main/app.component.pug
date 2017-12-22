@@ -1,0 +1,8 @@
+doctype html
+
+router-outlet
+
+div.extra-buttons-group.trns(#buttonsGroup)
+	button#back(mat-fab, color="warn",[routerLink] = "['']",*ngIf = "backbtn"): .fa.fa-chevron-left.fa-2x
+	button#question_button(mat-fab, color="primary",(click)="openDialog()"): mat-icon explore
+	button#chat_button(mat-fab, color="accent",(click)="openDialog()"): mat-icon message

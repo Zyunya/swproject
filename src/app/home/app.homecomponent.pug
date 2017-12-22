@@ -1,0 +1,145 @@
+doctype html
+
+-var classes1 = ['row','text-lg-center','text-xs-center','row-block']
+-var allcenter = ['text-lg-center','text-center']
+
+.container-fluid.trns([@cstmanim1],(click)="this.stater = ''",#homecontents)
+	div.row#main_header.trns(class = allcenter,#header)
+			mat-toolbar.mat-elevation-z3(color="accent",class = '')
+					span.rancho(routerLink="/",style='font-size:30px;color:white;text-shadow:0px 2px 3px #909090;cursor:pointer') Sw
+					span.example-fill-remaining-space
+					mat-icon([matMenuTriggerFor]="menu1") language
+					mat-menu(#menu1="matMenu")
+						button(mat-menu-item,(click)="change_lang('ru')")
+							mat-icon language
+							span Ru
+						button(mat-menu-item,(click)="change_lang('en')")
+							mat-icon language
+							span En
+
+			.col-12.col-lg-12
+				h1.rancho.display-1(style='color:white;text-shadow:5px 12px 12px #909090;') Sweetvel
+				h5(style='color:white;text-shadow:0px 3px 5px #909090') {{'subtitle' | translate}}
+
+			.col-12.col-lg-12
+				button#main_button(mat-raised-button,routerLink="contacts")  {{'contacts' | translate}}
+
+	div(class=classes1)
+		.col-lg-6.col-12.text-center
+			img(src='../../assets/img/mac.png', class='img-fluid', [style.maxHeight.px]='350')
+		.col-lg-6.col-12.text-center.title-margin-mobile
+			span.display-2((click) = 'catchInfo()',bold,colorgrey) About
+			span.display-2((click) = 'catchInfo()',bold,color1) Us
+			P.text-justify.pdng1([innerHtml]="'sweetvel_main_desc' | translate")
+
+	//-div.anim_content(class=classes1 class=['stack','img1'])
+
+	div(class=classes1)
+		.col-lg-6.col-12.text-center.anim_content.animleft
+			span.display-2(bold,colorgrey) Advan
+			span.display-2(bold,color1) tages
+			P.text-justify.pdng1([innerHtml]="'advantages_desc' | translate")
+
+		.col-lg-6.col-12.text-center.anim_content.animright
+			img(src='../../assets/img/colors.png', class='img-fluid', [style.maxHeight.px]='350')
+
+	//-div(class=classes1 class=['stack','img2'])
+
+	div(class=classes1)
+		.col-lg-6.col-12.text-center.anim_content.animleft
+			img(src='../../assets/img/android.svg', class='img-fluid', [style.maxHeight.px]='350')
+		.col-lg-6.col-12.text-center.anim_content.animright.title-margin-mobile
+			span.display-2(colorgrey,bold) Mobile
+			span.display-2(color1,bold) Apps
+			P.text-justify.pdng1([innerHtml]="'mobile_apps' | translate")
+			mat-icon.float-center.text-center info_outline
+			.text-center(swcolor-info2,[innerHtml]="'mobile_apps_info' | translate")
+
+.container-fluid.pdngno#black-side
+	div(class=classes1)
+		.col-lg-12.col-12.text-center.anim_content_vert.anim-content-top.title-margin-mobile-bottom
+				span.display-2(bold) Our
+				span.display-2(color1,bold) Stack
+				br
+				br
+
+		.col-lg-3.col-12.text-center.anim_content.animleft
+				img(src='../../assets/img/angularlogoshort.png', class='img-fluid', [style.maxHeight.px]='150')
+				br
+				br
+
+				mat-icon.float-center.text-center(swcolor-info) info_outline
+				P.text-center: b ANGULAR JS/ANGULAR 2/4/5
+
+		.col-lg-3.col-12.text-center.anim_content.animright
+				img(src='../../assets/img/reactlogoshort.png', class='img-fluid', [style.maxHeight.px]='150')
+				br
+				br
+				mat-icon.float-center.text-center(swcolor-info) info_outline
+				P.text-center: b REACT/REACT NATIVE/REDUX
+
+		.col-lg-3.text-center.anim_content.animleft
+				img(src='../../assets/img/ioniclogoshort.png', class='img-fluid', [style.maxHeight.px]='150')
+				br
+				br
+				mat-icon.float-center.text-center(swcolor-info) info_outline
+				P.text-center: b IONIC 2 HYBRID MOBILE APPS
+		.col-lg-3.text-center.anim_content.animright
+				img(src='../../assets/img/nodejslogoshort.svg', class='img-fluid', [style.maxHeight.px]='150')
+				br
+				br
+				mat-icon.float-center.text-center(swcolor-info) info_outline
+				P.text-center: b NODEJS SERVER API/RESTAPI
+
+	div(class=classes1)
+			.col-lg-12.text-center.mx-auto.anim_content_vert.anim-content-top
+				span.display-2(bold) Sergey
+				span.display-2(color1,bold) C.
+
+			.col-11.mx-auto.anim_content.animleft
+				br
+				br
+				.card.card-inverse(style='background-color:#222; border-color: #222;padding:5px')
+					.card-block
+						.row
+							.col-lg-6.text-center.mx-auto
+								#ceoimg
+							.col-lg-6.text-center.mx-auto
+								P.text-justify.pdng1() 	{{'CEO' | translate}}
+								a.btn.btn-primary(href='https://www.linkedin.com/in/sergey-chakir-084bb8103/') LinkedIn
+								a.btn.btn-primary(href='https://instagram.com/innovator_innovator',style='margin-left:10px') Instagram
+			br
+			br
+
+.container-fluid.pdngno
+		#footer
+			div.row.w-100
+				div.col-12.col-lg-4.text-left.text-lg-center
+					i.fa.fa-glass
+					span    Sweetvel 2018
+				div.col-12.col-lg-4.text-left.text-lg-center
+					i.fa.fa-envelope
+					span    hello@sweetvel.com
+				div.col-12.col-lg-4.text-left.text-lg-center
+					i.fa.fa-safari
+					span    www.sweetvel.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

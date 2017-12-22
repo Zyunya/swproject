@@ -1,0 +1,45 @@
+{
+	"HELLO": "Hello",
+	"BYE": "{{value}}",
+	"TST": "TEST WORDS",
+	"about": "About",
+	"apply": "Apply",
+	"callback": "Callback",
+	"advantages": "Advantages",
+	"subtitle": "Web And Mobile App Development",
+	"contacts" : "CONTACTS",
+	"apply"      : "Apply",
+	"apply_desc" : "Application Description",
+	"telephone" : "Telephone",
+	"not_required" : "Optional",
+	"required" : "<strong>required field</strong>",
+	"invalid_email" : "Please enter a valid email address",
+	"description" : "Description",
+	"send" : "Send",
+	"close": "Close",
+	"info1" : "<strong>Hi!</strong>Send us a Message and we will reply soon.",
+	"info2" : "",
+
+	"CEO" : [
+		"Hello my name is Sergey ,and i'am an executive organizator of Sweetvel team. I have a great experience in Web And Mobile app development.Before Sweetvel i occupied FullStack and Frontend positions In It OutSource Companies."
+	],
+
+	"advantages_desc": [
+		"We use a stack of the most progressive technologies and frameworks",
+		"Every project we develop is exclusive and unique.",
+		"We provide full complex ,from development to preview and  deployment on production",
+		"Also we can take care of your projects (improvement,bug fix and administration),"
+	],
+
+	"sweetvel_main_desc": [
+		"<strong>Sweetvel</strong> is a <strong>Dev</strong> Studio which specializes in <strong>WEB</strong> and <strong>MOBILE</strong>Apps Development",
+		"We have a broad development range, from simple Landings to Blogs,Social Networks and Business Apps",
+		"If you have any idea,or maybe you want your own website or App,but you  dont't know how it's going to look like ,we can help you  to turn it into reality ",
+		"At first We will build the best decision,and then we will start development"
+	],
+	"mobile_apps": [
+		"We Provide a Fast Development of mobile apps , and in a short period we can transform exsisting webapp or website",
+		"to mobile  Hybrid Application using <b>React Native</b> or <b>Ionic2 Framework</b>."
+	],
+	"mobile_apps_info": "Currentrly we provide only Android Apps Development"
+}

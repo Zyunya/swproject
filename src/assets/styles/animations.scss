@@ -1,0 +1,33 @@
+
+$transition1 : 1.3s;
+.animation1{
+	transition:1s;
+	opacity:1 !important;
+	transform:translate(0%) !important;
+}
+.anim_content.animleft{
+	opacity:-1;
+	transition:$transition1;
+	transform:translateX(-100%);
+}
+
+.anim_content.animright{
+	opacity:-01;
+	transition:$transition1;
+	transform:translateX(100%);
+}
+.anim-content-top{
+	opacity:-01;
+	transition:$transition1;
+	transform:translateY(150%);
+}
+
+.anim-content-top2{
+	opacity:0.1;
+	transition:$transition1;
+	transform:translateY(250%);
+}
+
+.trns{
+	transition:$transition1;
+}
